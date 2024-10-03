@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, vendor/twrp/config/common.mk) # twrp-9分支改为onmi
 
 # Device specific configs
-$(call inherit-product, device/xiaomi/rubens/device.mk)
+$(call inherit-product, device/droidlogic/t982_ar301/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t982_ar301
