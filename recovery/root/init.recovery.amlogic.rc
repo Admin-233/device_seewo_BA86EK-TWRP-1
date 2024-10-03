@@ -8,12 +8,14 @@ on init
 on fs
 
 on post-fs-data
+    start boot-hal-1-2
     chown system system /sys/class/android_usb/android0/f_mass_storage/lun/file
     chmod 0660 /sys/class/android_usb/android0/f_mass_storage/lun/file
     chown system system /sys/class/android_usb/android0/f_rndis/ethaddr
     chmod 0660 /sys/class/android_usb/android0/f_rndis/ethaddr
 
 on boot
+    start health-hal-2-1
     mkdir /udisk
     mkdir /dev/usb-ffs 0770 system system
     mkdir /dev/usb-ffs/adb 0770 system system

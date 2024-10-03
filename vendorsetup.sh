@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_t982_ar301-userdebug
-add_lunch_combo omni_t982_ar301-eng
+#add_lunch_combo omni_t982_ar301-userdebug
+#add_lunch_combo omni_t982_ar301-eng
